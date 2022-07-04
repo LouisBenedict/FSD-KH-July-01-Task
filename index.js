@@ -3,9 +3,9 @@
 // Task 1 -> Alert if the String is palindrome or not. 
 
 function palindrome_or_not() {
-    let user_input = prompt();
+    let user_input = prompt("Check if string is palindrome.");
 
-    for(let i = 0; i < user_input.length; i + i - 1) {
+    for(let i = 0; i < user_input.length; i = i - 1) {
         if(user_input[i] !== user_input[user_input.length - 1]) {
             alert("False");
         } else {
@@ -40,7 +40,7 @@ function most_occurred_char() {
 // Task 3 -> Alert Factorial Number.
 
 function factorial() {
-    let user_input3 = prompt();
+    let user_input3 = prompt("Calculates the factorial of number.");
     user_input3 = parseInt(user_input3);
 
     let answer = 1;
@@ -58,7 +58,7 @@ function factorial() {
 // Task 4 -> Alert Vowel Count.
 
 function exclude_vowels() {
-    let user_input4 = prompt();
+    let user_input4 = prompt("Count string characters without including vowels.");
     
     let count = 0;
     
